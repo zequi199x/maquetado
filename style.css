@@ -1,0 +1,361 @@
+html{
+    height: 150vh;
+   
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+header{
+    height: 7%;
+}
+main{
+    height: 88%;
+
+}
+footer{
+    height: 5%;
+}
+/**********************header**************************/
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.containar-logo{
+    width: 33%;
+    height: 100%;
+    margin: 0;
+}
+.containar-logo a{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.containar-logo img{
+    width:350px;
+    height: 90px;
+    margin-left: 8%;
+}
+.containar-general-search{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+}
+.containar-general-search input{
+    width: 50%;
+    height: 50%;
+    margin: 1%;
+    font-size: 20px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.containar-general-search button{
+    width: 30%;
+    height: 55%;
+    padding-left:20px ;
+    font-size: 20px;
+    color: #000;
+    border-radius: 10px;
+    border: 1px solid  rgba(0 , 0, 0, 0.5);
+    cursor: pointer;
+    transition:  all 0.25s ease-in-out;
+}
+nav ul{
+    width:37%; 
+    height: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none ;
+    cursor: pointer;
+}
+nav ul li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:#000; 
+}
+nav ul li h3{
+    width: 55%;
+    height: 40%;
+    display: grid;
+    place-content: center;
+    color: rgba(0 , 0, 0, 0.5); ;
+    border: 1px solid rgba(0 , 0, 0, 0.5);
+    list-style: none ;
+    border-radius: 10px;
+    transition: all 0.25s ease-in-out;
+  
+}
+/*************************end-hearder*************************************/
+/****************************main****************************************/
+.container-main{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.container-carrucel{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    overflow: hidden;
+}
+.container-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0%;
+    top:0%;
+    background-color: rgba(0 , 0, 0, 0.5);
+}
+.text{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  /*  border: 1px solid #fff;*/
+}
+.text h2{
+    width: 80%;
+    height: 50%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    align-items: start;
+    color: #fff;
+  /*  border: 1px solid #fff;*/
+}
+.text a{
+    width: 20%;
+    height: 7%;
+    border: 1px solid rgb(5, 63, 170);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0e76a8;
+    color: #fff;
+  /*  border: 1px solid #fff;*/
+}
+.container-carrucel ul{
+    width: 400%;
+    height: 100%;
+   display: flex;
+    margin: 0;
+    padding: 0;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+.container-carrucel ul li{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    list-style:none ;
+    margin: 0;
+}
+.container-carrucel ul li img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slide {
+    
+    0%{margin-left: 0%; }
+    20%{margin-left: 0%;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+
+
+
+.container-search{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+.container-search input{
+    width: 30%;
+    height: 50%;
+    padding-left:20px ;
+    border: none;
+    font-size: 20px;
+    color: #000;
+    border-bottom: 2px solid rgba(0  , 0, 0, 0.5);
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.container-search button{
+    width: 12%;
+    height: 50%;
+    padding-left:20px ;
+    font-size: 20px;
+    color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgba(0 , 0, 0, 0.5);
+    transition:  all 0.25s ease-in-out;
+}
+
+
+.container-aboutMe{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    background-color: #ccc;
+    margin: 0;
+}
+.containar-title-aboutMe{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+    letter-spacing: 1px;
+    background-color: #ccc;
+    margin: 0;
+}
+.containar-title-aboutMe h2{
+    width: 100%;
+    height: 30%;
+    display: grid;
+    place-content: center;
+    font-size: 35px;
+    letter-spacing: 1px;
+    background-color: #ccc;
+    margin: 0;
+} 
+.containar-title-aboutMe p{
+    max-width: 100%;
+    height: 70%;
+    text-align: justify;
+    letter-spacing: 1px;
+    margin: 1%;
+    padding: 16px;
+    font-size: 20px;
+    margin: 0;
+     
+}
+.containar-text-aboutMe{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+ 
+}
+.containar-text-aboutMe img{
+    width: 550px;
+    height: 350px;
+ 
+}
+
+.containar-text-aboutMe a{
+     font-size: 18px; 
+    color: blue;
+}
+
+
+
+/****************************footer*********************/
+footer h4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #fff;
+    background-color:rgba(0 , 0, 0, 0.8);
+    margin: 0;
+}
+/****************************end-footer*********************/
+
+
+
+
+
+
+/****************************hover*********************/
+.container-search button:hover,.containar-general-search button:hover{
+    box-shadow: 0 0 10px;
+    background-color: #ccc;
+    color: rgba(0  , 0, 0, 0.7);
+}
+nav ul li h3:hover{
+    border: 1px solid #000;
+    color: #000;
+}
+/****************************end-hover*********************/
+input::placeholder{
+    color: rgb(153, 80, 51);
+}
+input{
+    background-color: #eee;
+}
+/************************font*****************************************/
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+  .mulish {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+  .poly-regular {
+    font-family: "Poly", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /************************end-font*****************************************/
